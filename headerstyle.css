@@ -98,6 +98,8 @@ li[class="side-item active"] a {
     margin-left: 190px;
     border: 10px;
     transition: 3rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 
 }
 
