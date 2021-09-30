@@ -1,87 +1,70 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="headerstyle.css">
-    <title>DIVE INTO CODE</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <title>DIVE Co., Ltd.</title>
 </head>
-
 <body>
-    <header>
-        <nav class="nav-bar">
-            <h1 class="nav-brand block" style="color: white"><b>DIVE</b></h1> 
-            <div class="nav-navbar">
-                <ul class="nav-items">
-                    <li class="nav-item block"><a href="#">Home</a></li>
-                    <li class="nav-item block"><a href="#">About</a></li>
-                    <li class="nav-item block"><a href="#">Services</a></li>
-                    <li class="nav-item block"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="top-section">
-            <img src="./images/TOP.png" class="top_image">
-        </div>
-    </header>
-    <aside class="block mt-2">
-        <ul class="side-items">
-            <li class="side-item"><a href="#">About</a></li>
-            <li class="side-item"><a href="#">Services</a></li>
-            <li class="side-item" id="contact"><a href="#">Contact</a></li>
+  <div class="container">
+    <header class="header clearfix">
+      <a href="#">
+        <img src="./images/logo.png" class="logo_image">
+      </a>
+      <nav>
+        <ul class="top_menu clearfix">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Business Description</a></li>
+          <li><a href="#">Company Profile</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
-    </aside>
-    <article class="block mt-2">
-        <center>
-            <form class="center">
-                <table>
-                    <tr>
-                        <th>
-                            <label for="name">Username</label>
-                        </th>
-                        <td>
-                            <input class="form-item" id="name" type="text" required />
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="name">Email</label>
-                        </th>
-                        <td>
-                            <input class="form-item" id="email" type="text" required />
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="name">Gender</label>
-                        </th>
-                        <td>
-                            <input class="form-item" type="radio" id="gende" name="gender" required />Male
-                            <input class="form-item" type="radio" id="gender" name="gender" required />Female
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="name">Inquiry</label>
-                        </th>
-                        <td>
-                            <textarea class="form-input"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td>
-                            <input type="submit" class="btn" />
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </center>
-    </article>
+      </nav>
+    </header>
+    <img src="./images/Top.png" class="image_area">
+    <div class="wrapper clearfix">
+      <aside class="side_menu">
+        <nav>
+          <ul>
+            <li><a href="#">Business Description</a></li>
+            <li><a href="#">Company Profile</a></li>
+            <li class="point"><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <article class="content">
+        <form method="post">
+          <table class="contact">
+            <tr>
+              <th>Full name</th>
+              <td><input type="text" class="text"></td>
+           </tr>
+           <tr>
+             <th>Email</th>
+             <td><input type="text" class="text"></td>
+           </tr>
+           <tr>
+             <th>Gender</th>
+             <td>
+               <input type="radio" name="sex" value="male">male
+               <input type="radio" name="sex" value="female">female
+             </td>
+           </tr>
+           <tr>
+             <th>Inquiry</th>
+             <td><textarea class="inquiry"></textarea></td>
+          </tr>
+        </table>
+        <p>
+          <input type="submit" value="submit" class="button">
+        </p>
+      </form>
+      </article>
+    </div>
     <footer class="footer">
-        <span class="footer-content">Copyright ©️2016 DIVE INC ALL RIGHTS RESERVED</span>
+      <p>Copyright © 2018 DIVE INC All RIGHTS RESERVED.</p>
     </footer>
+  </div>
 </body>
-
 </html>
